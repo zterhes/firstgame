@@ -1,0 +1,23 @@
+{
+  "name": "firstgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zterhes/firstgame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zterhes/firstgame/issues"
+  },
+  "homepage": "https://github.com/zterhes/firstgame#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10",
+    "table": "^6.0.3"
+  }
+}

@@ -15,9 +15,3 @@ const player = {
 };
 
 map = mapModul.fillMap(player, apples, width, height);
-
-for (let i = 0; i < map.length; i++) {
-  for (let k = 0; k < map[i].length; k++) {
-    process.stdout.write(map[i][k]);
-  }
-}
