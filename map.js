@@ -1,3 +1,7 @@
+
+const { table } = require('table');
+const { getBorderCharacters } = require('table');
+
 const fillMap = (player, apples, width, height) => {
   const playerX = player.pos.x;
   const playerY = player.pos.y;
@@ -16,6 +20,22 @@ const fillMap = (player, apples, width, height) => {
   return map;
 };
 
+const drawMap = (map) => {
+  const output = table(map, {
+    border: getBorderCharacters('void'),
+    columnDefault: {
+      paddingLeft: 0,
+      paddingRight: 1
+    },
+    drawHorizontalLine: () => {
+      return false;
+    }
+  });
+
+  console.log(output);
+};
+
 module.exports = {
-  fillMap
+  fillMap,
+  drawMap
 };
