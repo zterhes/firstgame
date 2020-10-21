@@ -15,3 +15,4 @@ const player = {
 };
 
 map = mapModul.fillMap(player, apples, width, height);
+mapModul.drawMap(map);
